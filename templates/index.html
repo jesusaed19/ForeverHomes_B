@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="{{url_for('static', path='/img/favicon.png')}}" type="image/x-icon" />
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="{{url_for('static', path='/css/swiper-bundle.min.css')}}" rel="stylesheet" />
+
+        <!--=============== CSS ===============-->
+        <link href="{{url_for('static', path='css/style.css')}}" rel="stylesheet" />
+
+        <!-- ============= BOXICON ================ -->
+
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+        <title>ForeverHomesLLC</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="{{url_for('static', path='/img/logo.png')}}" alt="" class="img-logo">
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="{{url_for('static', path='/img/framing/f00.jpg')}}" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Hello, We are</span>
+                        <h1 class="home__data-title"> <b> FOREVERHOMESLLC </b></h1>
+                        <h1 class="home__data-title slogan">GENERAL CONTRACTOR</h1>
+                        <a href="#about" class="button">About us</a>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+
+                    
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Our Intro<br> About us.</h2>
+                        <p class="about__description">"We are an independent, client-focused constrution company, whose main goal is to meet the needs of our costumers while contributing to the development of the community. We strive to offer the finest quality design, cost estimates, site preparation, constructions and repair to clients needing both large and small scale construction services"
+                        </p>
+                        <a href="#contact" class="button">Contact Us</a>
+                    </div>
+
+                    <div class="about__img">
+                        
+
+                        <div class="about__img-overlay">
+                            <img src="{{url_for('static', path='/img/garage/garage01.jpg')}}" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== PROJECTS ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Our Portfolio<br> Recent Works</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== Framing ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/framing/f00.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Framing</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/framing/f01.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Framing</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/framing/f02.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Framing</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/framing/f03.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Framing</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/framing/f04.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Framing</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/framing/f05.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Framing</h2>
+                            </div>
+                        </div>
+
+                        <!--==================== Fencing ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/fences/fen01.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Fencing</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/fences/fen02.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Fencing</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/fences/fen03.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Fencing</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/fences/fen04.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Fencing</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/fencing/fe01.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Fencing</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/fencing/fe02.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Fencing</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/fencing/fe03.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Fencing</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/fencing/fe04.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Fencing</h2>
+                            </div>
+                        </div>
+
+                        <!--==================== DECKS ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/decks/decks01.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Decks</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/decks/decks02.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Decks</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/decks/decks03.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Decks</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/decks/decks04.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Decks</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/decks/decks05.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Decks</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/decks/decks06.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Decks</h2>
+                            </div>
+                        </div>
+
+                        <!--==================== GARAGE ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/garage/garage01.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Garage</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/garage/garage02.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Garage</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/garage/garage03.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Garage</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/garage/garage04.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Garage</h2>
+                            </div>
+                        </div>
+
+                        <!-- ==================== Roof ====================== -->
+
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/roof/roof01.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Roof</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/roof/roof02.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Roof</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/roof/roof03.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Roof</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/roof/roof04.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Roof</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/roof/roof05.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Roof</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/roof/roof06.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Roof</h2>
+                            </div>
+                        </div>
+
+                        <!-- ================ SINDING =================== -->
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/siding/si01.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Siding</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/siding/si02.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Siding</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/siding/si03.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Siding</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/siding/si04.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Siding</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/siding/si06.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Siding</h2>
+                            </div>
+                        </div>
+
+                        <!-- ===================SUNROOM ================== -->
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/sunroom/sun01.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Sunroom</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/sunroom/sun02.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Sunroom</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/sunroom/sun03.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Sunroom</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/sunroom/sun04.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Sunroom</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/sunroom/sun05.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Sunroom</h2>
+                            </div>
+                        </div>
+                        <div class="discover__card swiper-slide">
+                            <img src="{{url_for('static', path='img/sunroom/sun06.jpg')}}" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Sunroom</h2>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- =================== CONTACT ===================== -->
+
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Get in touch <br> Contact Us</h2>
+    
+                <div class="contact__container container grid">
+                    <div class="contact__content">
+                        <h3 class="contact__title">Talk to us</h3>
+    
+                        <div class="contact__info">
+                            <div class="contact__card">
+                                <i class="bx bx-mail-send contact__card-icon"></i>
+                                <h3 class="contact__card-title">Email</h3>
+                                <span class="contact__card-data">info@foreverhomeswa.com</span>
+    
+                                <a href="mailto:info@foreverhomeswa.com" target="_blank" rel="noreferrer noopener"
+                                    class="contact__button">
+                                    Write me
+                                    <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+                            </div>
+    
+                            <div class="contact__card">
+                                <i class="bx bxl-whatsapp contact__card-icon"></i>
+                                <h3 class="contact__card-title">Whatsapp</h3>
+                                <span class="contact__card-data">+1 (509) 850-6422</span>
+    
+                                <a href="https://api.whatsapp.com/send?phone=15098506422&text=Hello,%20more%20information, about ForeverHomes!"
+                                    target="_blank" rel="noreferrer noopener" class="contact__button">
+                                    Write me
+                                    <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+                            </div>
+    
+                            <div class="contact__card">
+                                <i class="bx bxl-messenger contact__card-icon"></i>
+                                <h3 class="contact__card-title">Messenger</h3>
+                                <span class="contact__card-data">ForeverHomes</span>
+    
+                                <a href="https://m.me/foreverhomesllc" target="_blank" rel="noreferrer noopener"
+                                    class="contact__button">
+                                    Write me
+                                    <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="contact__content">
+                        <h3 class="contact__title">How can we help you?</h3>
+    
+                        <form action="/thanks" method="post" class="contact__form">
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Name</label>
+                                <input name="name" type="text" placeholder="" class="contact__form-input"
+                                    required />
+                            </div>
+    
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Email</label>
+                                <input name="mail" type="email" placeholder="" class="contact__form-input"
+                                    required />
+                            </div>
+    
+                            <div class="contact__form-div contact__form-area">
+                                <label for="" class="contact__form-tag">Project</label>
+                                <textarea name="project" id="" cols="30" rows="10" placeholder="Tell us about your project." required
+                                    class="contact__form-input"></textarea>
+                            </div>
+    
+                            <button type="submit" class="button button_modal">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+           
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">FOREVERHOMESLLC</h3>
+                        <p class="footer__description">A home forever.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="#about" class="footer__link">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#projects" class="footer__link">Projects</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#contact" class="footer__link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                   
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; FOREVERHOMESLLC. All rigths reserved.</p>
+                   
+                </div>
+            </div>
+        </footer>
+
+        
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="{{url_for('static', path='/js/scrollreveal.min.js')}}"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="{{url_for('static', path='/js/swiper-bundle.min.js')}}"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="{{url_for('static', path='/js/main.js')}}"></script>
+    </body>
+</html>
